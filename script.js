@@ -14,8 +14,11 @@ function showRegions() {
 
 getCountries().then(
   (countries) => {
-    countries.forEach((thecountry) => {
-      console.log(thecountry.name);
+    console.log(countries.length);
+    
+    countries.forEach((member) => {
+      console.log(member);
+
       let countryCard = document.createElement("div");
       countryCard.classList.add("country");
       let countryFlag = document.createElement("img");
